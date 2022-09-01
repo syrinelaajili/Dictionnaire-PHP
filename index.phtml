@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="php.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Traducteur Anglais - Français</h1>
+    </header>
+    <main>
+        <form action="index.php" method="POST">
+            <ul>
+                <li>
+                    <label for="mot">Mot :</label>
+                        <input type="text" id="mot" name="mot" >
+                </li>
+                <li>
+                    <label for="direction">Sens de traduction :</label>
+                        <select id="monselect" name="monselect">
+                            <option value="frtoeng">Français vers l'anglais</option>
+                            <option value="engtofr" >Anglais vers le Français</option>
+                        </select>
+                </li>
+                <li>
+                    <input type="submit" value="Traduire">
+                </li>
+   
+            </ul>
+
+        </form>
+            <p><?php echo $result ?></p>
+    </main>
+    
+</body>
+</html>
+
+
+
+   
